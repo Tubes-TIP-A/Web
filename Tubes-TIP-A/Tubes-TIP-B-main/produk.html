@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Produk - Buah Segar Bengkulu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f7f7f7;
+      color: #333;
+    }
+    .navbar {
+      background-color: #375a4f !important;
+    }
+    .navbar .nav-link {
+      color: #f1f1f1 !important;
+      transition: color 0.3s;
+    }
+    .navbar .nav-link.active,
+    .navbar .nav-link:hover {
+      color: #cce3dc !important;
+      font-weight: bold;
+    }
+    .produk-section {
+      padding: 3rem 1rem;
+      animation: fadeIn 1s ease;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    .produk-card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .produk-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .produk-img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      background-color: #fff;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      padding: 10px;
+    }
+    .harga {
+      color: #28a745;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-top: 5px;
+    }
+    footer {
+      background-color: #375a4f;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">Buah Segar Bengkulu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang UMKM</a></li>
+          <li class="nav-item"><a class="nav-link active" href="produk.html">Produk atau Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri atau Aktivitas</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container produk-section">
+    <h2 class="text-center mb-4 text-dark">Produk Kami</h2>
+    <div class="row">
+
+      <!-- Gunakan template produk -->
+      <!-- Contoh format (ganti isi sesuai buah) -->
+      <!--
+        <div class="col-md-4 mb-4">
+          <div class="card produk-card">
+            <img src="URL" class="produk-img" alt="NAMA">
+            <div class="card-body">
+              <h5 class="card-title">NAMA</h5>
+              <p class="card-text">DESKRIPSI</p>
+              <p class="harga">Rp XX.XXX / kg</p>
+            </div>
+          </div>
+        </div>
+      -->
+
+      <!-- Semua produk -->
+
+      <div class="col-md-4 mb-4">
+        <div class="card produk-card">
+          <img src="https://i.pinimg.com/736x/4f/88/75/4f88758fffc805a2d8f4052459c7ead5.jpg" class="produk-img" alt="Apel">
+          <div class="card-body">
+            <h5 class="card-title">Apel</h5>
+            <p class="card-text">Apel merah segar dari perkebunan lokal Bengkulu.</p>
+            <p class="harga">Rp 25.000 / kg</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card produk-card">
+          <img src="https://i.pinimg.com/736x/1a/3f/96/1a3f9694bb3cd73159b94ccee8dcf9a9.jpg" class="produk-img" alt="Pisang">
+          <div class="card-body">
+            <h5 class="card-title">Pisang</h5>
+            <p class="card-text">Pisang manis dan matang alami siap santap.</p>
+            <p class="harga">Rp 18.000 / kg</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card produk-card">
+          <img src="https://i.pinimg.com/736x/d7/9f/3a/d79f3a05804c2808c46c545a561cc501.jpg" class="produk-img" alt="Jeruk">
+          <div class="card-body">
+            <h5 class="card-title">Jeruk</h5>
+            <p class="card-text">Jeruk segar kaya vitamin C dari petani lokal.</p>
+            <p class="harga">Rp 22.000 / kg</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card produk-card">
+          <img src="https://i.pinimg.com/474x/cf/e9/2b/cfe92b3816bfc4a193d4ba9cfea98c00.jpg" class="produk-img" alt="Mangga">
+          <div class="card-body">
+            <h5 class="card-title">Mangga</h5>
+            <p class="card-text">Mangga harum manis segar dan manis alami.</p>
+            <p class="harga">Rp 26.000 / kg</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card produk-card">
+          <img src="https://i.pinimg.com/736x/0b/a0/8f/0ba08f3c376b9d91c9814c95dcaad6cb.jpg" class="produk-img" alt="Rambutan">
+          <div class="card-body">
+            <h5 class="card-title">Rambutan</h5>
+            <p class="card-text">Rambutan merah ranum dengan rasa manis dan segar.</p>
+            <p class="harga">Rp 20.000 / kg</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card produk-card">
+          <img src="https://i.pinimg.com/736x/2d/f5/9c/2df59c40c998f7f8f68da41cc5f90334.jpg" class="produk-img" alt="Buah Naga">
+          <div class="card-body">
+            <h5 class="card-title">Buah Naga</h5>
+            <p class="card-text">Buah naga merah kaya antioksidan dan serat alami.</p>
+            <p class="harga">Rp 30.000 / kg</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card produk-card">
+          <img src="https://i.pinimg.com/736x/f9/b7/2d/f9b72db3f0c57f1d71bf404570eef0e4.jpg" class="produk-img" alt="Salak">
+          <div class="card-body">
+            <h5 class="card-title">Salak</h5>
+            <p class="card-text">Salak manis legit dari kebun tradisional Bengkulu.</p>
+            <p class="harga">Rp 24.000 / kg</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card produk-card">
+          <img src="https://i.pinimg.com/736x/04/07/c9/0407c9132a1bb40f607f870c02e730dd.jpg" class="produk-img" alt="Markisa">
+          <div class="card-body">
+            <h5 class="card-title">Markisa</h5>
+            <p class="card-text">Markisa segar dengan rasa asam manis menyegarkan.</p>
+            <p class="harga">Rp 28.000 / kg</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card produk-card">
+          <img src="https://i.pinimg.com/736x/4e/0a/fe/4e0afe25433c9ebc1b371237e9c4fb71.jpg" class="produk-img" alt="Manggis">
+          <div class="card-body">
+            <h5 class="card-title">Manggis</h5>
+            <p class="card-text">Manggis segar dengan rasa manis dan kaya antioksidan.</p>
+            <p class="harga">Rp 27.000 / kg</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card produk-card">
+          <img src="https://i.pinimg.com/736x/e9/73/1a/e9731aeb0df98f8039015dcc9739bb34.jpg" class="produk-img" alt="Leci">
+          <div class="card-body">
+            <h5 class="card-title">Leci</h5>
+            <p class="card-text">Leci manis dan lembut, cocok untuk dijadikan minuman segar.</p>
+            <p class="harga">Rp 23.000 / kg</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tambahan baru -->
+      <div class="col-md-4 mb-4">
+        <div class="card produk-card">
+          <img src="https://i.pinimg.com/736x/d5/9e/bd/d59ebd9c440e82aab9ac5045b05c18e4.jpg" class="produk-img" alt="Lengkeng">
+          <div class="card-body">
+            <h5 class="card-title">Lengkeng</h5>
+            <p class="card-text">Lengkeng segar dengan rasa manis dan aroma khas.</p>
+            <p class="harga">Rp 35.000 / kg</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card produk-card">
+          <img src="https://i.pinimg.com/736x/90/a7/a0/90a7a010b502f17b37f411b3f69693eb.jpg" class="produk-img" alt="Sirsak">
+          <div class="card-body">
+            <h5 class="card-title">Sirsak</h5>
+            <p class="card-text">Sirsak segar untuk jus dan minuman sehat alami.</p>
+            <p class="harga">Rp 21.000 / kg</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card produk-card">
+          <img src="https://i.pinimg.com/736x/2d/d0/e9/2dd0e9a11a6d5b49a1b23c5df9ff83b6.jpg" class="produk-img" alt="Kiwi">
+          <div class="card-body">
+            <h5 class="card-title">Kiwi</h5>
+            <p class="card-text">Buah kiwi hijau segar dengan rasa unik dan kaya vitamin C.</p>
+            <p class="harga">Rp 40.000 / kg</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Tambahan Anggur -->
+        <div class="col-md-4 mb-4">
+            <div class="card produk-card">
+              <img src="https://i.pinimg.com/736x/fd/ad/1b/fdad1b247915256d9d6de65d11a78fbb.jpg" class="produk-img" alt="Anggur">
+              <div class="card-body">
+                <h5 class="card-title">Anggur</h5>
+                <p class="card-text">Anggur merah segar dan manis, cocok untuk cemilan sehat.</p>
+                <p class="harga">Rp 38.000 / kg</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Tambahan Alpukat -->
+          <div class="col-md-4 mb-4">
+            <div class="card produk-card">
+              <img src="https://i.pinimg.com/736x/41/18/77/411877f019171a4aaa5673a3f0b76c31.jpg" class="produk-img" alt="Alpukat">
+              <div class="card-body">
+                <h5 class="card-title">Alpukat</h5>
+                <p class="card-text">Alpukat mentega segar kaya lemak sehat dan cocok untuk jus.</p>
+                <p class="harga">Rp 29.000 / kg</p>
+              </div>
+            </div>
+          </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Buah Segar Bengkulu. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

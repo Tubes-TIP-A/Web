@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beranda - Buah Segar Bengkulu</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      background: #fff; /* Hapus background gradasi, jadi putih bersih */
+      color: #222;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background-color: #375a4f !important;
+      transition: background-color 0.5s ease;
+    }
+    .navbar .nav-link {
+      color: #f1f1f1 !important;
+      transition: color 0.3s;
+    }
+    .navbar .nav-link:hover,
+    .navbar .nav-link.active {
+      color: #cce3dc !important;
+      font-weight: bold;
+    }
+    header.hero {
+      position: relative;
+      height: 80vh;
+      max-width: 1200px;
+      margin: 2rem auto 3rem auto; /* tengah dan beri jarak atas bawah */
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25); /* shadow halus */
+      background: url('https://i.pinimg.com/736x/91/dc/65/91dc6550284584a25e3c7fe1c5c99624.jpg') center/cover no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    header.hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.35); /* overlay transparan agar teks jelas */
+      z-index: 0;
+    }
+    header.hero h1 {
+      position: relative;
+      font-size: 2.8rem;
+      animation: fadeInDown 1s ease;
+      z-index: 1;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+      padding: 0 1rem;
+    }
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    section.intro {
+      padding: 2.5rem 1rem;
+      max-width: 700px;
+      margin: auto;
+      animation: slideIn 1s ease;
+      color: #333;
+    }
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    footer {
+      background-color: #375a4f;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (min-width: 768px) {
+      header.hero h1 {
+        font-size: 3.5rem;
+      }
+      section.intro {
+        padding: 4rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">Buah Segar Bengkulu</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tentang.html">Tentang UMKM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="produk.html">Produk atau Layanan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeri.html">Galeri atau Aktivitas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontak.html">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>Selamat Datang di Buah Segar Bengkulu</h1>
+  </header>
+
+  <section class="container intro text-center">
+    <h2 class="mb-3">Buah Segar Langsung dari Kebun</h2>
+    <p>
+      Kami menyediakan berbagai macam buah segar yang dipetik langsung dari petani lokal Bengkulu. Dengan kualitas terbaik dan harga terjangkau, kami siap melayani kebutuhan buah harian Anda.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Buah Segar Bengkulu. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
